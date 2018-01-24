@@ -25,6 +25,7 @@ Currently, it installs the following:
 * [Pip (Python Package Manager)](https://pip.pypa.io/en/stable/)
   * [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper/)
 * [oh-my-zsh Zsh Management Framework](https://github.com/robbyrussell/oh-my-zsh) 
+* [Vim Pathogen Plugin Manager](https://github.com/tpope/vim-pathogen)
 
 The setup script is intended to be idempotent (i.e. you can run it multiple times without 
 causing any issues -- if the package exists, it should skip it).
