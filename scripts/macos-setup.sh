@@ -81,6 +81,20 @@ else
     fi
 fi
 
+# Install Pathogen (VIM Plugins)
+if [ ! -d "$HOME/.vim/autoload" ]; then
+    echo "Install VIM Pathogen: Creating VIM Plugin Dirs"
+    mkdir -p "$HOME/.vim/autoload" "$HOME/.vim/bundle"
+fi
+if [ -f "$HOME/.vim/autoload/pathogen.vim" ]; then
+    echo "VIM Pathogen Already Installed!"
+else
+    curl -LSso "$HOME/.vim/autoload/pathogen.vim" https://tpo.pe/pathogen.vim
+    if [ $? -ne 0 ]; then
+        echo "VIM Pathogen Install Failed!"
+    fi
+fi
+
 ## Next Steps
 # Setup unbound DNS Proxy (for DNSSEC)
 # Setup the user home env
