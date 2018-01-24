@@ -26,6 +26,8 @@ Currently, it installs the following:
   * [virtualenvwrapper](https://pypi.python.org/pypi/virtualenvwrapper/)
 * [oh-my-zsh Zsh Management Framework](https://github.com/robbyrussell/oh-my-zsh) 
 
+The setup script is intended to be idempotent (i.e. you can run it multiple times without 
+causing any issues -- if the package exists, it should skip it).
 
 # Configs
 ### Unbound DNS Proxy Config
